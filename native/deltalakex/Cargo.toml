@@ -1,11 +1,11 @@
 [package]
-name = "deltalake"
+name = "deltalakex"
 version = "0.1.0"
 authors = []
 edition = "2021"
 
 [lib]
-name = "deltalake"
+name = "deltalakex"
 path = "src/lib.rs"
 crate-type = ["cdylib"]
 
