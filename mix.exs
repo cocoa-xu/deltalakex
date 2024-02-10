@@ -40,7 +40,7 @@ defmodule DeltaLakex.MixProject do
   end
 
   defp description() do
-    "A tiny Elixir library for image decoding task with image_rs as the backend."
+    "DeltaLake binding for Elixir"
   end
 
   defp package() do
