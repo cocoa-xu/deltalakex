@@ -53,5 +53,5 @@ defmodule DeltaLake.Nif do
     mode: mode,
     force_build: System.get_env("DELTALAKEX_BUILD") in ["1", "true"]
 
-  def add(_a, _b), do: :erlang.nif_error(:not_loaded)
+  def read_table(_table_uri), do: :erlang.nif_error(:not_loaded)
 end
