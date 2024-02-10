@@ -14,3 +14,9 @@ deltalake = { version = "0.17.0", default-features = true, features = [
     "json"
 ]}
 rustler = "0.30.0"
+
+[features]
+default = ["nif_version_2_15"]
+
+# Feature necessary for Rustler Precompiled.
+nif_version_2_15 = ["rustler/nif_version_2_15"]
