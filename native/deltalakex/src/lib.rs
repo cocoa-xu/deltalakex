@@ -13,7 +13,11 @@ pub fn read_table(
 
 async fn do_read_table(table_uri: &str) -> Result<(), DeltaTableError> {
     let table = deltalake::open_table(table_uri).await?;
-    println!("{table}");
+    if let Some(table_state) = table.state {
+        let a = table_state.add_actions_table(false)?;
+        print!("{:?}", a);
+    }
+    
     Ok(())
 }
 
