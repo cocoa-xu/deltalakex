@@ -47,3 +47,6 @@ deltalakex-*.tar
 .nix-mix
 .nix-hex
 .direnv
+
+# Ignore rustler_precompiled checksum files
+checksum-*.exs
