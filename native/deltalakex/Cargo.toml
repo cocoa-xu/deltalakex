@@ -10,4 +10,7 @@ path = "src/lib.rs"
 crate-type = ["cdylib"]
 
 [dependencies]
+deltalake = { version = "0.17.0", default-features = true, features = [
+    "json"
+]}
 rustler = "0.30.0"

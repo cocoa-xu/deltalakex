@@ -3,4 +3,4 @@ fn add(a: i64, b: i64) -> i64 {
     a + b
 }
 
-rustler::init!("Elixir.DeltaLake", [add]);
+rustler::init!("Elixir.DeltaLake.Nif", [add]);
